@@ -13,7 +13,7 @@
       "psr-4":{
         "Clarkson\\Hooks\\": "src"
       },
-      "files": ["entry.php"]
+      "files": ["clarkson-hooks.php"]
     },
     "require": {}
 }
