@@ -1,0 +1,19 @@
+{
+    "name": "level-level/clarkson-hooks",
+    "description": "Solution for 'Just in time' WordPress Hooks.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Level Level",
+            "email": "info@level-level.com"
+        }
+    ],
+    "autoload": {
+      "psr-4":{
+        "Clarkson\\Hooks\\": "src"
+      },
+      "files": ["entry.php"]
+    },
+    "require": {}
+}
