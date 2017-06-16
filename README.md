@@ -42,6 +42,8 @@ class init implements iHook {
 
 Note: the `\Clarkson\Hooks\iHook` interface makes sure you correctly define your `Hook` object.
 
+For a real live example, check out the [init hook in Clarkson Theme](https://github.com/level-level/Clarkson-Theme/blob/021fcfe463b52f399d713b5bd867b01c19b4dead/app/Hooks/init.php).
+
 # What happens in the background
 
 1. An `apply_filters` or `do_action` is called from WordPress.
