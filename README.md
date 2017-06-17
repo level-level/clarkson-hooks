@@ -23,7 +23,7 @@ It will load automatically.
 
 ## 3. Define a hook
 
-Example minimal init.php (put this in `app/Hooks/init.php` when using path specified in compose above.
+Example minimal init.php (put this in `app/Hooks/init.php` when using path specified in composer above.
 
 ```
 <?php
