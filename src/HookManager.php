@@ -14,12 +14,19 @@ class HookManager{
 
   public function __construct(){
     self::$starttime = microtime(true);
+    $this->debug = ( defined( 'WP_DEBUG' ) ? WP_DEBUG : false );
+    if(!$this->debug){
+      $this->classmap = array_keys(require __DIR__ . '/../../../composer/autoload_classmap.php');
+    }
   }
 
   public function loadHook($name){
-    $hook = '\\Hooks\\'.str_replace('/', '\\',$name);
+    $hook = 'Hooks\\'.str_replace('/', '\\',$name);
     if(!isset(self::$timings[$name])){
       self::$timings[$name] = microtime(true);
+      if(!$this->debug && !in_array($hook, $this->classmap)){
+        return;
+      }
       if(class_exists($hook)){
         $hook::register_hooks($name);
       }
