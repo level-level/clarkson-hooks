@@ -1,4 +1,4 @@
-# clarkson-hooks
+# Clarkson Hooks
 
 Solution for 'Just in time' WordPress Hooks.
 
