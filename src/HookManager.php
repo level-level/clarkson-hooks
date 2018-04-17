@@ -21,7 +21,7 @@ class HookManager{
   }
 
   public function loadHook($name){
-    $hook = 'Hooks\\'.str_replace('/', '\\',$name);
+    $hook = 'Hooks\\'.preg_replace('/\/|\./', '\\',$name);
     if(!isset(self::$timings[$name])){
       self::$timings[$name] = microtime(true);
       if(!$this->debug && !in_array($hook, $this->classmap)){
