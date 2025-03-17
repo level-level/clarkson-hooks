@@ -3,6 +3,7 @@
     "description": "Solution for 'Just in time' WordPress Hooks.",
     "type": "library",
     "license": "MIT",
+    "abandoned": true,
     "authors": [
         {
             "name": "Level Level",
